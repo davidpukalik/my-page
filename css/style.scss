@@ -1,2 +1,35 @@
 @import "variables_and_global";
 @import "typography";
+
+body {
+    background-image: url(/img/bg_img.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: var(--primary-white);
+}
+
+header {
+    display: flex;
+}
+
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        list-style-type: none;
+    }
+}

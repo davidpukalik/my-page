@@ -7,6 +7,14 @@
           box-sizing: border-box;
 }
 
+:root {
+  --primary-black: #101111;
+  --primary-gray: #242526;
+  --primary-white: #E9ECEF;
+  --accent-blue: #228BE6;
+  --acent-dark-blue: #1864AB;
+}
+
 html {
   font-family: 'Inconsolata', monospace;
 }
@@ -14,5 +22,148 @@ html {
 img {
   display: block;
   max-width: 100%;
+}
+
+.logo {
+  font-size: 1.953125rem;
+  font-weight: bold;
+  color: var(--primary-white);
+}
+
+.blue {
+  color: var(--accent-blue);
+}
+
+nav {
+  color: var(--primary-white);
+  font-size: 1.5625rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-white);
+  font-size: 4.0025rem;
+}
+
+h2 {
+  color: var(--primary-white);
+  font-size: 3.051875rem;
+}
+
+h3 {
+  color: var(--primary-white);
+  font-size: 1.953125rem;
+}
+
+h4 {
+  color: var(--primary-white);
+  font-size: 1.5625rem;
+}
+
+.subtitle {
+  color: var(--primary-white);
+  font-size: 1.953125rem;
+  font-weight: 300;
+}
+
+.see-more {
+  color: var(--primary-white);
+  font-size: 1.25rem;
+}
+
+.about-me {
+  color: var(--primary-gray);
+}
+
+.about-me-description {
+  font-weight: bold;
+}
+
+.about-me-first {
+  font-size: 2.44125rem;
+}
+
+.skill li {
+  list-style-type: none;
+  position: relative;
+  color: var(--primary-white);
+  font-size: 1.5625rem;
+}
+
+.skill li::before {
+  content: "-";
+  color: var(--accent-blue);
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.projects p {
+  color: var(--primary-white);
+}
+
+.contact-drop-message {
+  color: var(--primary-white);
+  font-size: 2.44125rem;
+}
+
+.contact p {
+  color: var(--primary-white);
+  font-size: 1.25rem;
+}
+
+footer {
+  color: var(--primary-gray);
+}
+
+body {
+  background-image: url(/img/bg_img.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-color: var(--primary-white);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */

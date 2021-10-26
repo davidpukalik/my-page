@@ -11,11 +11,12 @@
     --primary-gray: #242526;
     --primary-white: #E9ECEF;
     --accent-blue: #228BE6;
-    --acent-dark-blue: #1864AB;
+    --accent-dark-blue: #1864AB;
 }
 
 html {
     font-family: 'Inconsolata', monospace;
+    scroll-behavior: smooth;
 }
 
 img {

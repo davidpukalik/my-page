@@ -12,11 +12,12 @@
   --primary-gray: #242526;
   --primary-white: #E9ECEF;
   --accent-blue: #228BE6;
-  --acent-dark-blue: #1864AB;
+  --accent-dark-blue: #1864AB;
 }
 
 html {
   font-family: 'Inconsolata', monospace;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -39,7 +40,6 @@ nav {
   font-size: 1.5625rem;
 }
 
-h1,
 h2,
 h3,
 h4 {
@@ -137,7 +137,7 @@ header {
 
 .container {
   width: 90%;
-  max-width: 1500px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -151,6 +151,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 5vh;
+  padding-top: 1.5em;
+}
+
+nav {
+  width: 100%;
+  max-width: 600px;
 }
 
 nav ul {
@@ -163,7 +170,53 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   list-style-type: none;
+}
+
+nav ul a:link, nav ul a:visited {
+  text-decoration: none;
+  color: var(--primary-white);
+}
+
+nav ul a:hover {
+  color: var(--accent-blue);
+}
+
+nav ul a:active {
+  font-weight: bold;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95vh;
+}
+
+.right-col {
+  width: 35%;
+}
+
+.subtitle {
+  margin-bottom: 1.35em;
+}
+
+.see-more {
+  background-color: var(--accent-dark-blue);
+  padding: 0.3em 4em;
+  border-radius: 25px;
+  text-decoration: none;
+  -webkit-transition: background-color 140ms ease-in-out;
+  transition: background-color 140ms ease-in-out;
+}
+
+.see-more:hover {
+  background-color: var(--accent-blue);
 }
 /*# sourceMappingURL=style.css.map */

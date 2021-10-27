@@ -2,7 +2,7 @@
 @import "typography";
 
 body {
-    background-image: url(/img/bg_img.png);
+    background-image: url(../img/bg_img.png);
     background-repeat: no-repeat;
     background-size: 100vw;
     background-color: var(--primary-white);
@@ -20,11 +20,14 @@ header {
 }
 
 header {
+    height: 5vh;
+    padding-top: 1.5em;
+}
+
+.flex-sp {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
-    padding-top: 1.5em;
 }
 
 nav {
@@ -82,4 +85,8 @@ main {
     &:hover {
         background-color: var(--accent-blue);
     }
+}
+
+.about-me {
+    background-color: var(--primary-white);
 }

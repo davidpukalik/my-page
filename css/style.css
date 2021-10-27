@@ -265,10 +265,27 @@ nav ul a:active {
 }
 
 .skill h3 {
-  margin-bottom: 1em;
+  min-height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 0.4em;
+  line-height: 1;
 }
 
 .skill li {
   margin-left: 1.2em;
+}
+
+.spacing {
+  word-spacing: -10px;
 }
 /*# sourceMappingURL=style.css.map */

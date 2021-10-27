@@ -123,10 +123,14 @@ footer {
 }
 
 body {
-  background-image: url(../img/bg_img.png);
-  background-repeat: no-repeat;
-  background-size: 100vw;
   background-color: var(--primary-white);
+}
+
+main {
+  background-image: url(../img/bg_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 header {
@@ -142,11 +146,6 @@ header {
 }
 
 header {
-  height: 5vh;
-  padding-top: 1.5em;
-}
-
-.flex-sp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +155,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 2em;
 }
 
 nav {
@@ -189,7 +189,7 @@ nav ul a:active {
   font-weight: bold;
 }
 
-main {
+.info-me {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,7 +199,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 95vh;
+  padding-top: 12em;
 }
 
 .right-col {

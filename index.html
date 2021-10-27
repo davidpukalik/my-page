@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" sizes="16x16 32x32 64x64" href="img/favicon.png">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap" rel="stylesheet">
@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <div class="container">
 
-        <header>
+    <header>
+        <div class="container flex-sp">
             <div class="logo"><span class="blue">David</span> Pukalík</div>
             <nav>
                 <ul>
@@ -27,8 +27,11 @@
                     <li><a href="#contact">{contact}</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
+        </div>
+    </header>
+
+    <main>
+        <div class="container flex-sp">
             <div class="left-col">
                 <h1>David Pukalík</h1>
                 <p class="subtitle">Junior Programmer & Web Developer</p>
@@ -37,9 +40,11 @@
             <div class="right-col">
                 <img src="img/profile_picture_with_arrow_circle.png" alt="Me on picture" class="img-me">
             </div>
-        </main>
+        </div>
+    </main>
 
-        <section class="about-me" id="about">
+    <section class="about-me" id="about">
+        <div class="container">
             <h2 class="blue">{about_me}</h2>
             <div class="about-me-description">
                 <p class="about-me-first">Hello, Im <span class="blue">David</span>!</p>
@@ -50,12 +55,13 @@
                     at Technical university of Ostrava (CZ). I'm <span class="blue">available to start</span> to work in
                     <span class="blue"> April 2022 </span>. I would prefer to work in Moravian-Silesian Region.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="skills" id="skills">
+    <section class="skills" id="skills">
+        <div class="container">
             <h2>{skills}</h2>
             <div class="skills-flex">
-
                 <div class="skill programming-languages">
                     <h3><span class="blue">Programming</span> Languages</h3>
                     <ul>
@@ -65,7 +71,6 @@
                         <li>PHP</li>
                     </ul>
                 </div>
-
                 <div class="skill frontend">
                     <h3>Front<span class="blue">end</span></h3>
                     <ul>
@@ -77,14 +82,12 @@
                         <li>React</li>
                     </ul>
                 </div>
-
                 <div class="skill backend">
                     <h3>Back<span class="blue">end</span></h3>
                     <ul>
                         <li>Nette</li>
                     </ul>
                 </div>
-
                 <div class="skill databases">
                     <h3><span class="blue">Data</span>bases</h3>
                     <ul>
@@ -94,7 +97,6 @@
                         <li>MS-SQL</li>
                     </ul>
                 </div>
-
                 <div class="skill other-tools">
                     <h3>Other <span class="blue">Tools</span></h3>
                     <ul>
@@ -103,7 +105,6 @@
                         <li>VS Code</li>
                     </ul>
                 </div>
-
                 <div class="skill languages">
                     <h3>Human <span class="blue">Languages</span></h3>
                     <ul>
@@ -112,11 +113,12 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="projects" id="projects">
+    <section class="projects" id="projects">
+        <div class="container">
             <h2 class="blue">{projects}</h2>
-
             <div class="projects-flex">
                 <div class="row-flex">
                     <div class="project project-black">
@@ -148,7 +150,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row-flex">
                     <div class="project project-blue">
                         <img src="img/ref1.png" alt="Website picture">
@@ -179,12 +180,13 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
 
-        </section>
+    </section>
 
-        <section class="contact" id="contact">
+    <section class="contact" id="contact">
+        <div class="container">
             <h2>{contact_me}</h2>
             <p class="contact-drop-message">Drop Me A <span class="blue"><b>Message</b></span></p>
             <div class="contact-box">
@@ -203,20 +205,21 @@
                         <input type="text" name="input-form-subject" id="id-input-form-subject">
                     </div>
                 </div>
-
                 <div class="form-message">
                     <p>Enter your message</p>
                     <textarea name="textarea-form-message" id="id-textarea-form-message" cols="30" rows="10"
                         placeholder="Write your message here."></textarea>
                 </div>
-
                 <input type="submit" value="Submit your message" name="input-form-submit" id="id-input-form-submit">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
+    <footer>
+        <div class="container">
             <p>&copy; David Pukalík 2021</p>
-        </footer>
+        </div>
+    </footer>
 
     </div>
 

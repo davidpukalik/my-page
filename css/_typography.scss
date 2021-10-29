@@ -89,15 +89,15 @@ p {
     }
 }
 
-.contact-drop-message {
-    color: var(--primary-white);
-    font-size: 2.44125rem;
-}
-
 .contact {
     p {
         color: var(--primary-white);
         font-size: 1.25rem;
+    }
+
+    .contact-drop-message {
+        color: var(--primary-white);
+        font-size: 2.44125rem;
     }
 }
 

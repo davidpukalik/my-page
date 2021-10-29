@@ -280,6 +280,10 @@ nav ul a:active {
   padding-top: 24vh;
 }
 
+.img-me-circle {
+  display: none;
+}
+
 .right-col {
   width: 37%;
 }
@@ -304,6 +308,41 @@ nav ul a:active {
   background-color: var(--accent-blue);
 }
 
+@media (max-width: 1024px) {
+  .info-me {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+    height: 80vh;
+  }
+  .left-col {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: center;
+  }
+  .right-col {
+    margin-bottom: 3em;
+  }
+  .img-me-circle {
+    display: block;
+  }
+  .img-me {
+    display: none;
+  }
+}
+
 .about-me {
   background-color: var(--primary-white);
   padding-bottom: 8em;
@@ -315,6 +354,14 @@ nav ul a:active {
   position: absolute;
   right: 0;
   top: -270px;
+}
+
+.about-me-description {
+  max-width: 60%;
+}
+
+.about-me-first {
+  margin-bottom: 0.5em;
 }
 
 @media (max-width: 1366px) {
@@ -329,14 +376,9 @@ nav ul a:active {
   .about-me::after {
     display: none;
   }
-}
-
-.about-me-description {
-  max-width: 60%;
-}
-
-.about-me-first {
-  margin-bottom: 0.5em;
+  .about-me-description {
+    max-width: 90%;
+  }
 }
 
 .skills {
@@ -358,9 +400,11 @@ nav ul a:active {
 
 .skill {
   border: 2px solid white;
-  width: 16%;
-  height: 330px;
+  -ms-flex-preferred-size: 240px;
+      flex-basis: 240px;
+  height: 340px;
   padding: 1em;
+  margin: 1em;
 }
 
 .skill h3 {
@@ -389,6 +433,34 @@ nav ul a:active {
   word-spacing: -10px;
 }
 
+@media (max-width: 1335px) {
+  .skill {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    padding: 2em;
+  }
+  .skills-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .skills-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.projects {
+  position: relative;
+  padding-bottom: 5em;
+}
+
 .row-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -399,11 +471,6 @@ nav ul a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.projects {
-  position: relative;
-  padding-bottom: 5em;
 }
 
 .projects::before {
@@ -438,6 +505,7 @@ nav ul a:active {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 3em;
+  overflow: hidden;
 }
 
 .project p {

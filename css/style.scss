@@ -139,8 +139,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // padding-top: 12em;
     padding-top: 24vh;
+}
+
+.img-me-circle {
+    display: none;
 }
 
 .right-col {
@@ -165,6 +168,35 @@ nav {
     }
 }
 
+@media (max-width: 1024px) {
+    .info-me {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+        height: 80vh;
+    }
+
+    .left-col {
+        order: 1;
+        text-align: center;
+    }
+
+    .right-col {
+        margin-bottom: 3em;
+    }
+
+    .img-me-circle {
+        display: block;
+    }
+
+    .img-me {
+        display: none;
+    }
+
+}
+
 .about-me {
     background-color: var(--primary-white);
     padding-bottom: 8em;
@@ -178,6 +210,14 @@ nav {
     top: -270px;
 }
 
+.about-me-description {
+    max-width: 60%;
+}
+
+.about-me-first {
+    margin-bottom: 0.5em;
+}
+
 @media (max-width: 1366px) {
     .about-me::after {
         right: -96.5px;
@@ -189,14 +229,10 @@ nav {
     .about-me::after {
         display: none;
     }
-}
 
-.about-me-description {
-    max-width: 60%;
-}
-
-.about-me-first {
-    margin-bottom: 0.5em;
+    .about-me-description {
+        max-width: 90%;
+    }
 }
 
 .skills {
@@ -212,9 +248,11 @@ nav {
 
 .skill {
     border: 2px solid white;
-    width: 16%;
-    height: 330px;
+    // width: 240px;
+    flex-basis: 240px;
+    height: 340px;
     padding: 1em;
+    margin: 1em;
 
     h3 {
         min-height: 5rem;
@@ -236,15 +274,36 @@ nav {
     word-spacing: -10px;
 }
 
-.row-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media (max-width: 1335px) {
+    .skill {
+        flex-basis: 40%;
+        padding: 2em;
+    }
+
+    .skills-flex {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .skill {
+        flex-basis: 100%;
+    }
+
+    .skills-flex {
+        flex-wrap: wrap;
+    }
 }
 
 .projects {
     position: relative;
     padding-bottom: 5em;
+}
+
+.row-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .projects::before {
@@ -275,6 +334,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3em;
+    overflow: hidden;
 
     p {
         padding-bottom: 3em;

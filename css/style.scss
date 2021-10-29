@@ -214,7 +214,7 @@ nav {
 
 .project-left {
     object-fit: cover;
-    min-width: 65%;
+    width: 65%;
 }
 
 .project-blue {
@@ -224,8 +224,66 @@ nav {
 
 .project-right {
     padding: 1.5em;
-    max-width: 35%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.contact {
+    background-color: var(--primary-black);
+    padding-bottom: 8em;
+}
+
+.contact-drop-message {
+    margin-bottom: 0.3em;
+}
+
+.contact-box {
+    border: 3px solid var(--primary-white);
+    padding: 2em;
+}
+
+.form-row {
+    margin-bottom: 1em;
+}
+
+input {
+    background-color: var(--primary-white);
+    border: 2px solid var(--accent-blue);
+    padding: 0.5em;
+    outline: none;
+
+    &[name="input-form-name"],
+    &[name="input-form-email"],
+    &[name="input-form-subject"] {
+        width: 100%;
+    }
+
+    &[name="input-form-submit"] {
+        cursor: pointer;
+        font-size: 0.9rem;
+        background-color: var(--accent-blue);
+        color: var(--primary-white);
+        border: none;
+        transition: background-color 100ms ease-in-out;
+
+        &:hover {
+            background-color: var(--accent-dark-blue);
+        }
+    }
+}
+
+.form-name,
+.form-email,
+.form-subject {
+    width: 32.5%;
+}
+
+textarea {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid var(--accent-blue);
+    resize: none;
+    outline: none;
 }

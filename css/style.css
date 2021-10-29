@@ -105,6 +105,11 @@ p {
 
 .projects p {
   color: var(--primary-white);
+  font-size: .84375rem;
+}
+
+.projects a {
+  font-size: .90625rem;
 }
 
 .contact-drop-message {
@@ -135,7 +140,7 @@ main {
 
 .container {
   width: 90%;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -260,7 +265,7 @@ nav ul a:active {
 .skill {
   border: 2px solid white;
   width: 16%;
-  height: 300px;
+  height: 330px;
   padding: 1em;
 }
 
@@ -283,9 +288,111 @@ nav ul a:active {
 
 .skill li {
   margin-left: 1.2em;
+  margin-bottom: 0.2em;
 }
 
 .spacing {
   word-spacing: -10px;
+}
+
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project {
+  background-color: var(--primary-gray);
+  border: 1px solid var(--primary-gray);
+  max-width: 49%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3em;
+}
+
+.project p {
+  padding-bottom: 3em;
+}
+
+.project a {
+  text-transform: uppercase;
+}
+
+.project a:link, .project a:visited {
+  color: var(--primary-white);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary-white);
+}
+
+.project a:hover, .project a:active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--primary-white);
+}
+
+.flex-space-bet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.github {
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
+}
+
+.github:link,
+.github:visited {
+  border-bottom: none !important;
+}
+
+.github:hover,
+.github:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.project-left {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 65%;
+}
+
+.project-blue {
+  background-color: var(--accent-dark-blue);
+  border: 1px solid var(--accent-dark-blue);
+}
+
+.project-right {
+  padding: 1.5em;
+  max-width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

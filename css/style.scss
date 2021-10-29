@@ -25,7 +25,7 @@ main {
 
 .container {
     width: 90%;
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -131,7 +131,7 @@ nav {
 .skill {
     border: 2px solid white;
     width: 16%;
-    height: 300px;
+    height: 330px;
     padding: 1em;
 
     h3 {
@@ -146,9 +146,86 @@ nav {
 
     li {
         margin-left: 1.2em;
+        margin-bottom: 0.2em;
     }
 }
 
 .spacing {
     word-spacing: -10px;
+}
+
+.row-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project {
+    background-color: var(--primary-gray);
+    border: 1px solid var(--primary-gray);
+    max-width: 49%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+
+    p {
+        padding-bottom: 3em;
+    }
+
+    a {
+        text-transform: uppercase;
+
+        &:link,
+        &:visited {
+            color: var(--primary-white);
+            text-decoration: none;
+            border-bottom: 1px solid var(--primary-white);
+        }
+
+        &:hover,
+        &:active {
+            font-weight: bold;
+            border-bottom: 2px solid var(--primary-white);
+        }
+
+    }
+}
+
+.flex-space-bet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.github {
+    transition: transform 100ms ease-in-out;
+}
+
+.github:link,
+.github:visited {
+    border-bottom: none !important;
+}
+
+.github:hover,
+.github:active {
+    transform: scale(1.1);
+}
+
+.project-left {
+    object-fit: cover;
+    min-width: 65%;
+}
+
+.project-blue {
+    background-color: var(--accent-dark-blue);
+    border: 1px solid var(--accent-dark-blue);
+}
+
+.project-right {
+    padding: 1.5em;
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

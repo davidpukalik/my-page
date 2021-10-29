@@ -9,19 +9,8 @@ main {
     background-image: url(../img/bg_img.png);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
     height: 100vh;
 }
-
-// main::before {
-//     content: url(../img/polygon_first.svg);
-//     position: absolute;
-//     width: 300px;
-//     right: 0;
-//     top: 668px;
-// }
-
-//TODO media queries for polygon, 1024px, 1366px,  1920px, 2560px mby for 3840px, other resolution disappear
 
 .container {
     width: 90%;
@@ -96,7 +85,7 @@ nav {
     padding: 0.3em 4em;
     border-radius: 25px;
     text-decoration: none;
-    transition: background-color 140ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
 
     &:hover,
     &:active {
@@ -107,6 +96,27 @@ nav {
 .about-me {
     background-color: var(--primary-white);
     padding-bottom: 8em;
+    position: relative;
+}
+
+.about-me::after {
+    content: url(../img/polygon_first.svg);
+    position: absolute;
+    right: 0;
+    top: -270px;
+}
+
+@media (max-width: 1366px) {
+    .about-me::after {
+        right: -96.5px;
+        transform: scale(70%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-me::after {
+        display: none;
+    }
 }
 
 .about-me-description {
@@ -158,6 +168,30 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.projects {
+    position: relative;
+}
+
+.projects::before {
+    content: url(../img/polygon_second.svg);
+    position: absolute;
+    top: -172px;
+
+}
+
+@media (max-width: 1800px) {
+    .projects::before {
+        transform: scale(70%);
+        left: -114px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .projects::before {
+        display: none;
+    }
 }
 
 .project {
@@ -233,6 +267,27 @@ nav {
 .contact {
     background-color: var(--primary-black);
     padding-bottom: 8em;
+    position: relative;
+}
+
+.contact::after {
+    content: url(../img/polygon_third.svg);
+    position: absolute;
+    right: 0;
+    top: -100.5px;
+}
+
+@media (max-width: 1800px) {
+    .contact::after {
+        right: -66.6px;
+        transform: scale(70%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact::after {
+        display: none;
+    }
 }
 
 .contact-drop-message {
@@ -266,7 +321,7 @@ input {
         background-color: var(--accent-blue);
         color: var(--primary-white);
         border: none;
-        transition: background-color 100ms ease-in-out;
+        transition: background-color 200ms ease-in-out;
 
         &:hover {
             background-color: var(--accent-dark-blue);
@@ -286,4 +341,14 @@ textarea {
     border: 2px solid var(--accent-blue);
     resize: none;
     outline: none;
+}
+
+footer {
+    padding: 1em;
+
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

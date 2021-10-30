@@ -22,6 +22,7 @@ main {
     z-index: 99;
 
     a {
+        white-space: nowrap !important;
         font-size: 1.953125rem;
         font-weight: bold;
         color: var(--primary-white);
@@ -121,7 +122,7 @@ nav {
     font-size: 2rem;
 
     li {
-        margin-bottom: 2em;
+        margin-bottom: 1.5em;
     }
 }
 
@@ -197,6 +198,44 @@ nav {
 
 }
 
+@media (max-width: 500px) {
+    .main-menu.is-active {
+        padding-top: 3.5em;
+    }
+
+    .logo {
+        a {
+            font-size: 1.3rem;
+        }
+    }
+
+    .hamburger {
+        transform: scale(0.7);
+    }
+
+    .hamburger.is-active {
+        transform: scale(0.7);
+    }
+
+
+    .info-me {
+
+        .left-col {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1.5rem;
+            }
+
+            .see-more {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
 .about-me {
     background-color: var(--primary-white);
     padding-bottom: 8em;
@@ -235,6 +274,12 @@ nav {
     }
 }
 
+@media (max-width: 530px) {
+    .about-me-description {
+        max-width: 100%;
+    }
+}
+
 .skills {
     background-color: var(--primary-black);
     padding-bottom: 8em;
@@ -248,7 +293,6 @@ nav {
 
 .skill {
     border: 2px solid white;
-    // width: 240px;
     flex-basis: 240px;
     height: 340px;
     padding: 1em;
@@ -338,24 +382,34 @@ nav {
 
     p {
         padding-bottom: 3em;
+
+        a {
+            color: white;
+
+            &:hover {
+                color: var(--accent-blue);
+            }
+        }
     }
 
-    a {
-        text-transform: uppercase;
+    .flex-space-bet {
+        a {
+            text-transform: uppercase;
 
-        &:link,
-        &:visited {
-            color: var(--primary-white);
-            text-decoration: none;
-            border-bottom: 1px solid var(--primary-white);
+            &:link,
+            &:visited {
+                color: var(--primary-white);
+                text-decoration: none;
+                border-bottom: 1px solid var(--primary-white);
+            }
+
+            &:hover,
+            &:active {
+                font-weight: bold;
+                border-bottom: 2px solid var(--primary-white);
+            }
+
         }
-
-        &:hover,
-        &:active {
-            font-weight: bold;
-            border-bottom: 2px solid var(--primary-white);
-        }
-
     }
 }
 
@@ -395,6 +449,45 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+    .row-flex {
+        flex-direction: column;
+    }
+
+    .project {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .project {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 660px) {
+    .projects {
+        font-weight: bold;
+    }
+
+    .project {
+        width: 100%;
+        position: relative;
+    }
+
+    .project-left {
+        display: block;
+        width: 100%;
+    }
+
+    .project-right {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .contact {
@@ -475,6 +568,28 @@ textarea {
     resize: none;
     outline: none;
 }
+
+@media (max-width: 660px) {
+    .contact {
+        .flex-space-bet {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .form-name,
+    .form-email,
+    .form-subject {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    &[name="input-form-submit"] {
+        width: 100%;
+    }
+
+}
+
 
 footer {
     padding: 1em;

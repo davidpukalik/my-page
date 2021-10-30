@@ -549,8 +549,8 @@ nav ul a:active {
   color: white;
 }
 
-.project p a:hover {
-  color: var(--accent-blue);
+.project p a:hover, .project p a:active {
+  font-weight: bold;
 }
 
 .project .flex-space-bet a {

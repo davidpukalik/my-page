@@ -386,8 +386,9 @@ nav {
         a {
             color: white;
 
-            &:hover {
-                color: var(--accent-blue);
+            &:hover,
+            &:active {
+                font-weight: bold;
             }
         }
     }

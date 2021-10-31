@@ -351,6 +351,12 @@ nav ul a:active {
   }
 }
 
+@media (max-width: 1024px) and (orientation: landscape) {
+  .right-col {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   .main-menu.is-active {
     padding-top: 3.5em;

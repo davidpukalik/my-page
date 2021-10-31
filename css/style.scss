@@ -7,9 +7,16 @@ body {
 
 main {
     background-image: url(../img/bg_img.jpg);
+    background-color: rgb(3, 3, 3);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+@media (max-width: 1024px) {
+    main {
+        background-image: none;
+    }
 }
 
 .container {

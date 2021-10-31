@@ -132,9 +132,16 @@ body {
 
 main {
   background-image: url(../img/bg_img.jpg);
+  background-color: #030303;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  main {
+    background-image: none;
+  }
 }
 
 .container {

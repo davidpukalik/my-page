@@ -1,0 +1,34 @@
+h1 {
+    color: var(--primary-very-dark-magenta);
+    font-size: 3rem;
+
+}
+
+h3 {
+    color: #fff;
+    font-size: .8125rem;
+}
+
+blockquote {
+    color: #fff;
+    font-size: .8125rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.rating-text {
+    color: var(--primary-very-dark-magenta);
+    font-size: .8125rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: var(--neutral-dark-grayish-magenta);
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.verified {
+    color: var(--primary-soft-pink);
+    font-size: .8125rem;
+}

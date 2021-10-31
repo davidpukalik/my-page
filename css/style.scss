@@ -253,6 +253,23 @@ nav {
     max-width: 60%;
 }
 
+.about-me-text {
+    margin-bottom: 1em;
+
+    a {
+
+        &:link,
+        &:visited {
+            color: var(--accent-dark-blue);
+        }
+
+        &:hover,
+        &:active {
+            color: var(--accent-blue);
+        }
+    }
+}
+
 .about-me-first {
     margin-bottom: 0.5em;
 }

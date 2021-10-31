@@ -387,6 +387,18 @@ nav ul a:active {
   max-width: 60%;
 }
 
+.about-me-text {
+  margin-bottom: 1em;
+}
+
+.about-me-text a:link, .about-me-text a:visited {
+  color: var(--accent-dark-blue);
+}
+
+.about-me-text a:hover, .about-me-text a:active {
+  color: var(--accent-blue);
+}
+
 .about-me-first {
   margin-bottom: 0.5em;
 }

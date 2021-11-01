@@ -128,6 +128,7 @@ footer {
 
 body {
   background-color: var(--primary-white);
+  overflow-x: hidden;
 }
 
 main {
@@ -392,8 +393,10 @@ nav ul a:active {
 .about-me::after {
   content: url(../img/polygon_first.svg);
   position: absolute;
-  right: 0;
+  right: -114px;
   top: -270px;
+  -webkit-transform: scale(65%);
+          transform: scale(65%);
 }
 
 .about-me-description {
@@ -418,9 +421,9 @@ nav ul a:active {
 
 @media (max-width: 1366px) {
   .about-me::after {
-    right: -96.5px;
-    -webkit-transform: scale(70%);
-            transform: scale(70%);
+    right: -210.5px;
+    -webkit-transform: scale(35%);
+            transform: scale(35%);
   }
 }
 

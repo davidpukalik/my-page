@@ -148,7 +148,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 24vh;
+    padding-top: 18vh;
 }
 
 .img-me-circle {
@@ -259,9 +259,9 @@ nav {
 .about-me::after {
     content: url(../img/polygon_first.svg);
     position: absolute;
-    right: -114px;
-    top: -270px;
-    transform: scale(65%);
+    right: 0;
+    top: -92px;
+    // transform: scale(65%);
 }
 
 .about-me-description {
@@ -291,8 +291,8 @@ nav {
 
 @media (max-width: 1366px) {
     .about-me::after {
-        right: -210.5px;
-        transform: scale(35%);
+        right: -94px;
+        transform: scale(65%);
     }
 }
 

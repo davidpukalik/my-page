@@ -1,0 +1,32 @@
+h1,
+h2,
+h3 {
+    color: var(--white);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+p {
+    color: var(--gray);
+    font-size: .9375rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.hero {
+    span {
+        color: var(--light-blue);
+    }
+}

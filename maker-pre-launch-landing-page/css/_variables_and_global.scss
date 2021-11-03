@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-blue: #3EE9E5;
+    --dark-blue: #093F68;
+    --very-dark-blue: #080C20;
+    --gray: #777F98;
+    --red: #FF2965;
+    --white: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--very-dark-blue);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: 85%;
+    max-width: 1300px;
+    margin: 0 auto;
+}

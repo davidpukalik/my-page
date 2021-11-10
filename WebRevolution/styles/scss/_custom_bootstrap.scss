@@ -1,0 +1,19 @@
+$primary: #845ef7;
+
+.nav-item {
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.accordion-item {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+@media (min-width: 48rem) {
+    .carousel-inner {
+        max-width: 60%;
+    }
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,2 +1,3 @@
-# My website page
-http://davidpukalik.cz/
+# My old website page
+
+new one on: http://davidpukalik.cz/
